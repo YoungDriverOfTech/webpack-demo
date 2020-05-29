@@ -12,5 +12,13 @@ module.exports = {
         title: '无极麻辣油',
         // Load a custom template (lodash by default)
         template: './src/index.html'
-    })]
+    })],
+    module: {
+        rules: [
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+            },
+        ],
+    }
 };
